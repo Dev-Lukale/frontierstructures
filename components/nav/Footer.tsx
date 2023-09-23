@@ -4,7 +4,7 @@ type Props = {}
 
 const Footer = (props: Props) => {
   return (
-    <footer className=" hidden w-full lg:flex lg:flex-row items-center justify-between container">
+    <footer className=" hidden w-full lg:flex lg:flex-row items-center justify-between  ">
       <div className="flex flex-col gap-2">
         <span>Link mail</span>
         <span>Link phine number</span>

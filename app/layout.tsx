@@ -1,12 +1,16 @@
 
 import "./globals.css";
 import type { Metadata } from "next";
-import { Big_Shoulders_Display, Inter } from "next/font/google";
+import { Big_Shoulders_Display, Inter,JetBrains_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import ActiveSectionContextProvider from "@/context/activeSectionContextProvider";
 
 
-const inter = Big_Shoulders_Display({ subsets: ["latin"] });
+const Big_Shoulders = Big_Shoulders_Display({ subsets: ["latin"] });
+const JetBrains = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-jetbrains",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -21,7 +25,9 @@ export default function RootLayout({
 
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className} dark:before:bg-none`}>
+      <body
+        className={`${Big_Shoulders.className} ${JetBrains.variable} dark:before:bg-none`}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

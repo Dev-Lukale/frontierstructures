@@ -1,22 +1,26 @@
 export const ScrollItems = [
   {
-    name: "Red",
-    href: "/#red",
-    bg: "bg-red-400",
+    id: "general",
+    name: "Architectural Mastery",
+    href: "#general",
+    img: "https://plus.unsplash.com/premium_photo-1679079456783-5d862f755557?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjQ3fHxtYW4lMjB3aXRoJTIwbGFwdG9wfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
   },
   {
-    name: "Blue",
-    href: "/#blue",
-    bg: "bg-blue-400",
+    name: "Elegant Residences",
+    href: "#residential",
+    id: "residential",
+    img: "https://plus.unsplash.com/premium_photo-1679079456783-5d862f755557?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjQ3fHxtYW4lMjB3aXRoJTIwbGFwdG9wfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
   },
   {
-    name: "Green",
-    href: "/#green",
-    bg: "bg-green-400",
+    name: "Commercial Elegance",
+    href: "#commercial",
+    id: "commercial",
+    img: "https://plus.unsplash.com/premium_photo-1679079456783-5d862f755557?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjQ3fHxtYW4lMjB3aXRoJTIwbGFwdG9wfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
   },
   {
-    name: "Yellow",
-    href: "/#yellow",
-    bg: "bg-yellow-400",
+    name: "Industrial Prowess",
+    href: "#industrial",
+    id: "industrial",
+    img: "https://plus.unsplash.com/premium_photo-1679079456783-5d862f755557?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjQ3fHxtYW4lMjB3aXRoJTIwbGFwdG9wfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
   },
-] as const;
+];

@@ -3,23 +3,23 @@ import { LinkItem } from "@/types";
 
 export const LinkItems = [
   {
-    name: "Red",
-    href: "/#Red",
+    name: "Architectural Mastery",
+    href: "#general",
     disabled: false,
   },
   {
-    name: "Blue",
-    href: "/#Blue",
+    name: "Elegant Residences",
+    href: "#residential",
     disabled: false,
   },
   {
-    name: "Green",
-    href: "/#Green",
+    name: "Commercial Elegance",
+    href: "#commercial",
     disabled: false,
   },
   {
-    name: "Yellow",
-    href: "/#Yellow",
+    name: "Industrial Prowess",
+    href: "#industrial",
     disabled: false,
   },
 ] as const;

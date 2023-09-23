@@ -3,17 +3,18 @@ import { ScrollItems } from "@/config/scrollSection";
 import Section from "./Section";
 
 
-type Props = {};
 
-const HeroSection = (props: Props) => {
- 
+type Props = {
+  className?: string;
+};
+
+const HeroSection = ({ className }: Props) => {
+
   return (
-    <div className="overflow-y-scroll scroll-smooth">
-      {ScrollItems?.map((item, index) => (
-        <Section index={index} name={item.name} bg={ item.bg} />
+    <div className={`scroll-smooth ${className} no-scrollbar`}>
+      {ScrollItems?.map((item: any, index) => (
+        <Section index={index} id={item.id} name={item.name} img={item.img} />
       ))}
-
-
     </div>
   );
 };
