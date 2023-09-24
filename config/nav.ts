@@ -23,3 +23,22 @@ export const LinkItems = [
     disabled: false,
   },
 ] as const;
+
+export const mainNavItems = [
+  {
+    name: "Home",
+    href: "/",
+  },
+  {
+    name: "About",
+    href: "/about",
+  },
+  {
+    name: "Gallery",
+    href: "/gallery",
+  },
+  {
+    name: "Contact",
+    href: "/contact",
+  },
+] as const;

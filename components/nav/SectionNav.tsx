@@ -16,7 +16,7 @@ const SectionNav = () => {
             href={item.disabled ? "#" : item.href}
             // color="foreground"
             aria-current="page"
-            className="text-2xl font-medium font-jetbrains hover:scale-110 transition duration-200 "
+            className=" text-lg font-medium font-jetbrains hover:scale-110 transition duration-200 "
             onClick={() => {
               setActiveSection(item.name);
               setTimeOfLastClick(Date.now());

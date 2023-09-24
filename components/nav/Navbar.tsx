@@ -4,24 +4,8 @@ import { Button } from "@/components/ui/button";
 import { buttonVariants } from "@/components/ui/button";
 import { ThemeToggle } from "../theme-toggle";
 import Link from "next/link";
-const menuItems = [
-  {
-    name: "Home",
-    href: "#",
-  },
-  {
-    name: "About",
-    href: "#",
-  },
-  {
-    name: "Gallery",
-    href: "#",
-  },
-  {
-    name: "Contact",
-    href: "#",
-  },
-];
+import { mainNavItems } from "@/config/nav";
+
 
 type Props = {};
 
@@ -35,7 +19,7 @@ const Navbar = (props: Props) => {
     <div className="relative w-full lg:w-[80%] py-4 mx-auto 
      ">
       <ul className="flex items-center  justify-evenly ">
-        {menuItems.map((item, index) => (
+        {mainNavItems.map((item, index) => (
           <li key={index}>
             <Link
               href={item.href}

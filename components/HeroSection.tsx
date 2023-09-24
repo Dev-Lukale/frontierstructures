@@ -11,7 +11,7 @@ type Props = {
 const HeroSection = ({ className }: Props) => {
 
   return (
-    <div className={`scroll-smooth ${className} no-scrollbar max-xl:grid grid-cols-2 gap-2`}>
+    <div className={`scroll-smooth ${className} no-scrollbar max-xl:grid md:grid-cols-2 gap-2`}>
       {ScrollItems?.map((item: any, index) => (
         <Section index={index} id={item.id} name={item.name} img={item.img} />
       ))}

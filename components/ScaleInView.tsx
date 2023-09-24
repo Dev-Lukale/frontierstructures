@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import React, { ReactNode } from "react";
 
 type ScaleInViewProps = {
-  children: ReactNode;
+  children?: ReactNode;
   variants?: {
     initial?: Record<string, any>;
     animate?: Record<string, any>;
