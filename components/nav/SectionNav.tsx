@@ -8,7 +8,7 @@ const SectionNav = () => {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
   return (
-    <nav className=" hidden lg:space-y-4 lg:flex flex-col lg:mb-2">
+    <nav className=" hidden space-y-3 xl:flex xl:flex-col ">
       {LinkItems.map((item, index) => (
         <div className="flex items-center justify-between ">
           <Link
@@ -16,7 +16,7 @@ const SectionNav = () => {
             href={item.disabled ? "#" : item.href}
             // color="foreground"
             aria-current="page"
-            className="text-2xl font-medium font-jetbrains "
+            className="text-2xl font-medium font-jetbrains hover:scale-110 transition duration-200 "
             onClick={() => {
               setActiveSection(item.name);
               setTimeOfLastClick(Date.now());

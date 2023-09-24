@@ -21,7 +21,7 @@ const Section = ({ index, name, img ,id}: SectionProps) => {
       key={index}
       ref={ref}
       id={id}
-      className={`h-screen relative snap-start snap-always`}
+      className={`xl:h-screen h-auto relative snap-start snap-always`}
     >
       <Link href="/" className="">
         {" "}
@@ -36,7 +36,7 @@ const Section = ({ index, name, img ,id}: SectionProps) => {
 
       <Link
         href="/"
-        className="absolute top-8 left-8 text-left text-6xl text-zinc-300 block after:block after:content-[''] after:absolute after:h-[3px] after:bg-zinc-300 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center  hover:translate-x-2 transition ease-in-out delay-150"
+        className="absolute left-4 top-4 xl:top-8 xl:left-8 text-left text-3xl xl:text-6xl text-zinc-300 block after:block after:content-[''] after:absolute after:h-[3px] after:bg-zinc-300 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center  hover:-translate-y-2 transition ease-in-out delay-150"
       >
         {name}
       </Link>

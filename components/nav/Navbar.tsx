@@ -32,13 +32,14 @@ const Navbar = (props: Props) => {
   //   setIsMenuOpen(!isMenuOpen);
   // };
   return (
-    <div className="relative w-full py-8 bg-inherit ">
-      <ul className="flex items-center  justify-evenly lg:space-x-32  lg:px-24">
+    <div className="relative w-full lg:w-[80%] py-4 mx-auto 
+     ">
+      <ul className="flex items-center  justify-evenly ">
         {menuItems.map((item, index) => (
           <li key={index}>
             <Link
               href={item.href}
-              className={`font-jetbrains relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center `}
+              className={`font-jetbrains transition hover:scale-110 relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center `}
             >
               {item.name}
             </Link>
